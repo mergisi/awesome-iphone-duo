@@ -1,0 +1,22 @@
+name: HelloDuo
+options:
+  bundleIdPrefix: com.mergisi
+  deploymentTarget:
+    iOS: "18.0"
+targets:
+  HelloDuo:
+    type: application
+    platform: iOS
+    sources: [HelloDuo]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.mergisi.helloduo
+        MARKETING_VERSION: "1.0"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight"
+        INFOPLIST_KEY_CFBundleDisplayName: Hello Duo
+        SWIFT_VERSION: "5.0"
+        TARGETED_DEVICE_FAMILY: "1"
+        CODE_SIGNING_ALLOWED: NO
