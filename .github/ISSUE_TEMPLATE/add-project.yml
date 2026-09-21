@@ -1,0 +1,56 @@
+name: Add a project
+description: Suggest a project for the list — including your own.
+title: "Add: "
+labels: ["new entry"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Happy to add it for you. If you would rather send the pull request
+        yourself, the one-line format is in [CONTRIBUTING.md](../blob/main/CONTRIBUTING.md).
+
+  - type: input
+    id: link
+    attributes:
+      label: Link
+      placeholder: https://github.com/you/your-project
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What is it?
+      description: One or two sentences, in your own words. What it does, and what it does with the second screen.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What kind of thing is it?
+      options:
+        - App
+        - Sample code
+        - Article or talk
+        - Tool
+        - Something else
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License
+      description: Skip this if it is not code.
+      placeholder: MIT
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you submit
+      options:
+        - label: It runs on the Duo today, or it teaches something specific about building for one
+          required: true
+        - label: It is mine
+          required: false
