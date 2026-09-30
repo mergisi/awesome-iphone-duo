@@ -32,7 +32,7 @@ Writing that teaches a specific technique, API behaviour, or measurement.
 
 Simulators, debugging helpers, design resources.
 
-*Nothing here yet.*
+- **[capacitor-foldable](https://github.com/erkamyaman/capacitor-foldable)** — Capacitor plugin that reports the Duo's fold to a web view: the crease rectangle, hinge angle, posture, size classes and the edge iOS moved the bars to, and it fills in the Device Posture and Viewport Segments APIs that WebKit keeps behind a flag. MIT.
 
 ## Contributing
 
